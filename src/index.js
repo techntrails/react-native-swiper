@@ -7,6 +7,7 @@ import ReactNative, {
   StyleSheet,
   Text,
   View,
+  ViewPropTypes,
   ScrollView,
   Dimensions,
   TouchableOpacity,
@@ -110,7 +111,7 @@ module.exports = createReactClass({
   propTypes: {
     horizontal                       : PropTypes.bool,
     children                         : PropTypes.node.isRequired,
-    style                            : View.propTypes.style,
+    style                            : ViewPropTypes.style,
     pagingEnabled                    : PropTypes.bool,
     showsHorizontalScrollIndicator   : PropTypes.bool,
     showsVerticalScrollIndicator     : PropTypes.bool,
